@@ -1,5 +1,5 @@
 /* Author: marmolak (dark side of me) */
-/* Ubccre */
+/* Ubccre 3.3.7 */
 #include <stdio.h>
 #include <stdlib.h>
 
