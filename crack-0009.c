@@ -32,6 +32,10 @@ int main (int argc, char **argv)
     fseek (fp, 0x1054e3 + 4, SEEK_SET);
     fwrite (magic_bytes, 6, 1, fp);
 
+    const char not_magic_bytes[13] = "            ";
+    fseek (fp, 0x27ff50, SEEK_SET);
+    fwrite (not_magic_bytes, 12, 1, fp);
+
     fclose (fp);
 
     return EXIT_SUCCESS;
